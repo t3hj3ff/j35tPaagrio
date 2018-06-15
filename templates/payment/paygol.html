@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<body class="profile-page sidebar-collapse">
+{% include "snippets/cabinet_header.html" %}
+      <div class="section">
+          <div class="container">
+              <div class="paagrio-cabinet-buttons button-container">
+                  <a href="{% url 'cabinet'%}" class="btn btn-primary btn-round btn-lg paagrio-cabinet-text">{% trans "Back To pManage" %}</a>
+      </div>
+              <h3 class="title paagrio-title ">{% trans "Buy pCredits" %}</h3>
+              <h5 class="description"></h5>
+                <div class="container">
+                    <div class="col-md-12 content-center">
+                        <div class="card card-login card-plain">
+
+
+                                <div id="centerContent" class="content content-center" align="center">
+                                  <span class="content-center" align="center">{% trans "Choose Payment Option" %}</span>
+
+                                    <div class="input-group form-group-no-border input-lg">
+                                        <form name="pg_frm" method="post" action="https://www.paygol.com/pay" >
+										   <input type="hidden" name="pg_serviceid" value="476103">
+										   <input type="hidden" name="pg_currency" value="EUR">
+										   <input type="hidden" name="pg_name" value="Paagrio - pCredit Purchase">
+										   <input type="hidden" name="pg_custom" value="{{pg_custom}}">
+										   <input type="hidden" name="pg_price" value="{{pg_price}}">
+										   <input type="hidden" name="pg_return_url" value="https://paagr.io/ok">
+										   <input type="hidden" name="pg_cancel_url" value="https://paagr.io/fail">
+										   <input type="image" name="pg_button" src="https://www.paygol.com/webapps/img/buttons/150/black_en_pbm.png" border="0" alt="Make payments with Paygol: the easiest way!" title="Make payments with Paygol: the easiest way!" >     
+										</form>
+                                    </div>
+                                    {% blocktrans %}{{form.errors.as_text}}{%endblocktrans%}
+                                    <span class="content-center" style="color:red;" align="center">{% trans "After payment, you will recieve pCredits on your site-balance, to transfer it into you gaming follow link:" %} <a href="#">Tutorial</a></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </div>
+</body>
+
+{%endblock%}

@@ -1,0 +1,669 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-22 13:50+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\accounts\models.py:16
+msgid "User"
+msgstr "სახელი"
+
+#: .\accounts\models.py:18
+msgid "Interests"
+msgstr "ინტერესები"
+
+#: .\master_account\views.py:18 .\paagrio\settings.py:99 .\paagrio\views.py:12
+#: .\payment\views.py:24
+msgid "English"
+msgstr "ინგლისური"
+
+#: .\master_account\views.py:19 .\paagrio\settings.py:98 .\paagrio\views.py:13
+#: .\payment\views.py:25
+msgid "Georgian"
+msgstr "ქართული"
+
+#: .\master_account\views.py:20 .\paagrio\settings.py:100 .\paagrio\views.py:14
+#: .\payment\views.py:26
+msgid "Russian"
+msgstr "რუსული"
+
+#: .\templates\base.html:13 .\templates\base.html:34
+msgid "High Five Server"
+msgstr "High Five სერვერი"
+
+#: .\templates\base.html:58
+#, python-format
+msgid "%(message)s"
+msgstr ""
+
+#: .\templates\base.html:75
+msgid ""
+"<strong style=\"font-size: 14px; text-decoration:underline; font-weight:700;"
+"\">OBT: 10-14 June (19:00 GMT+3) || OFFICIAL SERVER LAUNCH: JUNE 16 19:00 "
+"(GMT+3)</strong>"
+msgstr ""
+"<strong style=\"font-size: 14px; text-decoration:underline; font-weight:700;"
+"\">OBT: 10-14 ივნისი (20:00) || სერვერის გახსნა: 16 ივნისი 20:00 </strong>"
+
+#: .\templates\cabinet.html:30 .\templates\snippets\cabinet_header.html:11
+msgid "Back To Home"
+msgstr "მთავარი გვერდი"
+
+#: .\templates\cabinet.html:42 .\templates\snippets\cabinet_header.html:23
+msgid "Sign Out "
+msgstr "გამოსვლა"
+
+#: .\templates\cabinet.html:45 .\templates\snippets\cabinet_header.html:26
+msgid "Bonus Points:"
+msgstr "ბონუს ქულები:"
+
+#: .\templates\cabinet.html:48 .\templates\cabinet.html:56
+#: .\templates\snippets\cabinet_header.html:29
+#: .\templates\snippets\cabinet_header.html:37
+msgid "pCredit"
+msgstr ""
+
+#: .\templates\cabinet.html:52 .\templates\char_manage.html:22
+#: .\templates\snippets\cabinet_header.html:33
+msgid "Buy"
+msgstr "შეიძინე"
+
+#: .\templates\cabinet.html:59 .\templates\snippets\cabinet_header.html:40
+msgid "pCredit Discount"
+msgstr "pCredit ფასდაკლება"
+
+#: .\templates\cabinet.html:69
+msgid "Bonus?"
+msgstr "ბონუსები?"
+
+#: .\templates\cabinet.html:70
+msgid "Add In-Game Account"
+msgstr "სათამაშო ჩანაწერის შექმნა"
+
+#: .\templates\cabinet.html:80
+msgid "Add In-game Account"
+msgstr "სათამაშო ჩანაწერის შექმნა"
+
+#: .\templates\cabinet.html:92
+#, python-format
+msgid "%(form.non_field_errors.as_text|striptags)s"
+msgstr ""
+
+#: .\templates\cabinet.html:93
+#, python-format
+msgid "%(form.login.errors.as_text)s"
+msgstr ""
+
+#: .\templates\cabinet.html:95
+msgid "Username"
+msgstr "სახელი"
+
+#: .\templates\cabinet.html:104
+msgid "Password"
+msgstr "პაროლი"
+
+#: .\templates\cabinet.html:111
+msgid "Repeat Password"
+msgstr "გაიმაორეთ პაროლი"
+
+#: .\templates\cabinet.html:123
+msgid "Back"
+msgstr "უკან"
+
+#: .\templates\cabinet.html:126
+msgid "Add Account"
+msgstr "ჩანაწერის შექმნა"
+
+#: .\templates\cabinet.html:133
+msgid "Gift Cards"
+msgstr "სასაჩუქრე ბარათები"
+
+#: .\templates\cabinet.html:136
+msgid "Edit Profile"
+msgstr "პროფილის რედაქტირება"
+
+#: .\templates\cabinet.html:139 .\templates\change.html:54
+msgid "Change Password"
+msgstr "პაროლის შეცვლა"
+
+#: .\templates\cabinet.html:142
+msgid "Change Email"
+msgstr "ელ-ფოსტის შეცვლა"
+
+#: .\templates\cabinet.html:147 .\templates\index.html:36
+#: .\templates\index.html:186 .\templates\news_detail.html:34
+#: .\templates\statistics_pk.html:34 .\templates\statistics_pvp.html:34
+msgid "Download Files"
+msgstr "ფაილების გადმოწერა"
+
+#: .\templates\cabinet.html:152 .\templates\index.html:40
+#: .\templates\index.html:41 .\templates\news_detail.html:38
+#: .\templates\news_detail.html:39 .\templates\statistics_pk.html:38
+#: .\templates\statistics_pk.html:39 .\templates\statistics_pvp.html:38
+#: .\templates\statistics_pvp.html:39
+msgid "Download Full High Five Client"
+msgstr "გადმოწერეთ სრული High Five სათამაშო კლიენტი"
+
+#: .\templates\cabinet.html:155 .\templates\index.html:43
+#: .\templates\index.html:44 .\templates\news_detail.html:41
+#: .\templates\news_detail.html:42 .\templates\statistics_pk.html:41
+#: .\templates\statistics_pk.html:42 .\templates\statistics_pvp.html:41
+#: .\templates\statistics_pvp.html:42
+msgid "Download Paagr.io Server Patch"
+msgstr "გადმოწერეთ Paagr.io სერვერის პატჩი"
+
+#: .\templates\cabinet.html:161
+msgid "In-Game Accounts"
+msgstr "სათამაშო ჩანაწერები"
+
+#: .\templates\cabinet.html:165
+msgid "Your In-game Accounts"
+msgstr "თქვენი სათამაშო ჩანაწერები"
+
+#: .\templates\cabinet.html:180
+msgid "Login"
+msgstr "სახელი"
+
+#: .\templates\cabinet.html:181
+msgid "Last IP"
+msgstr "ბოლო IP"
+
+#: .\templates\cabinet.html:182
+msgid "HWID"
+msgstr "HWID"
+
+#: .\templates\cabinet.html:183
+msgid "Actions"
+msgstr "მოქმედება"
+
+#: .\templates\cabinet.html:193
+msgid "Manage Account"
+msgstr "მართვა"
+
+#: .\templates\cabinet.html:214 .\templates\change.html:92
+msgid "You Have No Permission Here"
+msgstr "არ გაქვთ საკმარისი უფლება"
+
+#: .\templates\change.html:12 .\templates\char_manage.html:11
+#: .\templates\payment\paygol.html:11 .\templates\payment\test.html:11
+msgid "Back To pManage"
+msgstr "დაბრუნება pManage-ში"
+
+#: .\templates\change.html:21
+msgid "Acc.Name"
+msgstr "მფლობელი"
+
+#: .\templates\change.html:22
+msgid "Char.Name"
+msgstr "პერსონაჟი"
+
+#: .\templates\change.html:23
+msgid "PvP"
+msgstr ""
+
+#: .\templates\change.html:24
+msgid "PK"
+msgstr ""
+
+#: .\templates\change.html:25
+msgid "PCPB"
+msgstr ""
+
+#: .\templates\change.html:26
+msgid "Fame"
+msgstr ""
+
+#: .\templates\change.html:27
+msgid "Online"
+msgstr "თამაშშია?"
+
+#: .\templates\change.html:41
+msgid "Transfer pCredit"
+msgstr "pCredit ჩარიცხვა"
+
+#: .\templates\change.html:68
+msgid "New Password"
+msgstr "ახალი პაროლი"
+
+#: .\templates\change.html:78
+#, python-format
+msgid "%(form.password.errors.as_text)s"
+msgstr ""
+
+#: .\templates\change.html:80
+msgid "Set New Password"
+msgstr "ახალი პაროლის დაყენება"
+
+#: .\templates\char_manage.html:13 .\templates\char_manage.html:38
+msgid "Transfer pCredits"
+msgstr "გადარიცხეთ pCredit-ები!"
+
+#: .\templates\char_manage.html:22
+msgid "Your Total Available Balance: "
+msgstr "ხელმისაწვდომი ბალანსი:"
+
+#: .\templates\char_manage.html:27
+msgid "Enter how much pCredits you want to transfer"
+msgstr "ჩაწერეთ, თუ რა რაოდენობის pCredit-ის გადარიცხა გსურთ პერსონაჟზე"
+
+#: .\templates\char_manage.html:35 .\templates\payment\paygol.html:35
+#: .\templates\payment\test.html:35
+#, python-format
+msgid "%(form.errors.as_text)s"
+msgstr ""
+
+#: .\templates\char_manage.html:36
+msgid ""
+"PLEASE KEEP IN MIND CHARACTER MUST BE OFFLINE IN ORDER TO TRANSFER "
+"SUCCESSFULLY!"
+msgstr ""
+"გახსოვდეთ! პერსონაჟი უნდა იყოს გამოსული თამაშიდან, რომ ჩარიცხვა მოხდეს "
+"წარმატებით!"
+
+#: .\templates\index.html:12 .\templates\news_detail.html:10
+#: .\templates\statistics_pk.html:10 .\templates\statistics_pvp.html:10
+msgid "Paagr.io - Lineage 2 High Five Server"
+msgstr "Paagr.io - Lineage 2 High Five სერვერი"
+
+#: .\templates\index.html:24 .\templates\index.html:318
+#: .\templates\news_detail.html:22 .\templates\news_detail.html:130
+#: .\templates\statistics_pk.html:22 .\templates\statistics_pk.html:149
+#: .\templates\statistics_pvp.html:22 .\templates\statistics_pvp.html:149
+msgid "Home"
+msgstr "მთავარი"
+
+#: .\templates\index.html:27 .\templates\index.html:321
+#: .\templates\news_detail.html:25 .\templates\news_detail.html:133
+#: .\templates\statistics_pk.html:25 .\templates\statistics_pk.html:152
+#: .\templates\statistics_pvp.html:25 .\templates\statistics_pvp.html:152
+msgid "Download"
+msgstr "გადმოწერა"
+
+#: .\templates\index.html:48 .\templates\news_detail.html:46
+#: .\templates\statistics_pk.html:46 .\templates\statistics_pvp.html:46
+msgid "Close"
+msgstr "დახურვა"
+
+#: .\templates\index.html:49 .\templates\index.html:111
+#: .\templates\index.html:186 .\templates\news_detail.html:47
+#: .\templates\news_detail.html:103 .\templates\statistics_pk.html:47
+#: .\templates\statistics_pk.html:103 .\templates\statistics_pvp.html:47
+#: .\templates\statistics_pvp.html:103
+msgid "Register"
+msgstr "რეგისტრაცია"
+
+#: .\templates\index.html:57 .\templates\index.html:324
+#: .\templates\news_detail.html:55 .\templates\news_detail.html:136
+#: .\templates\statistics_pk.html:55 .\templates\statistics_pk.html:155
+#: .\templates\statistics_pvp.html:55 .\templates\statistics_pvp.html:155
+msgid "Statistics"
+msgstr "სტატისტიკა"
+
+#: .\templates\index.html:60 .\templates\index.html:327
+#: .\templates\news_detail.html:58 .\templates\news_detail.html:139
+#: .\templates\statistics_pk.html:58 .\templates\statistics_pk.html:158
+#: .\templates\statistics_pvp.html:58 .\templates\statistics_pvp.html:158
+msgid "Community"
+msgstr "საზოგადოება"
+
+#: .\templates\index.html:71 .\templates\news_detail.html:69
+#: .\templates\statistics_pk.html:69 .\templates\statistics_pvp.html:69
+msgid "pManage"
+msgstr "pManage"
+
+#: .\templates\index.html:76 .\templates\news_detail.html:74
+#: .\templates\statistics_pk.html:74 .\templates\statistics_pvp.html:74
+msgid "JOIN NOW!"
+msgstr "დაწყება!"
+
+#: .\templates\index.html:82 .\templates\news_detail.html:80
+#: .\templates\statistics_pk.html:80 .\templates\statistics_pvp.html:80
+msgid "Buy pCredits!"
+msgstr "შეიძინეთ pCredit-ები!"
+
+#: .\templates\index.html:97 .\templates\news_detail.html:95
+#: .\templates\statistics_pk.html:95 .\templates\statistics_pvp.html:95
+msgid "<h1>High Five - X100 <br> PvP, Your Time is <br>NOW!</h1>"
+msgstr "<h1>High Five - X100 <br> PvP, შენი დროა!</h1>"
+
+#: .\templates\index.html:99 .\templates\news_detail.html:97
+#: .\templates\statistics_pk.html:97 .\templates\statistics_pvp.html:97
+msgid "<span>Want to know more about server?</span>"
+msgstr "<span>გინდა გაიგო მეტი სერვერის შესახებ?</span>"
+
+#: .\templates\index.html:102 .\templates\index.html:104
+#: .\templates\index.html:106 .\templates\news_detail.html:99
+#: .\templates\statistics_pk.html:99 .\templates\statistics_pvp.html:99
+msgid "Details"
+msgstr "დეტალები"
+
+#: .\templates\index.html:109 .\templates\news_detail.html:101
+#: .\templates\statistics_pk.html:101 .\templates\statistics_pvp.html:101
+msgid "<span>or are you ready to join us?</span>"
+msgstr "ან, თუ ხარ უკვე მზად, დაიწყე ახლავე!"
+
+#: .\templates\index.html:157
+msgid "#StreamUs"
+msgstr "#დაგვსტრიმე"
+
+#: .\templates\index.html:165
+msgid "Watch!"
+msgstr "ყურება!"
+
+#: .\templates\index.html:171
+msgid "Become a streamer"
+msgstr "გახდი სტრიმერი"
+
+#: .\templates\index.html:175
+msgid "Server"
+msgstr "სერვერი"
+
+#: .\templates\index.html:179
+msgid "Chronicle: High Five"
+msgstr "ქრონიკა: High Five"
+
+#: .\templates\index.html:179
+msgid "x100</br>ON"
+msgstr "x100</br>ON"
+
+#: .\templates\index.html:183
+msgid "Paagrio - High Five"
+msgstr "Paagrio - High Five"
+
+#: .\templates\index.html:186
+msgid "Quick start: "
+msgstr "სწრაფი დაწყება: "
+
+#: .\templates\index.html:186
+msgid " > "
+msgstr ""
+
+#: .\templates\index.html:190
+msgid "News/Fixes"
+msgstr "ჟურნალი"
+
+#: .\templates\index.html:205
+msgid "Submit your issue"
+msgstr "მოგვწერე შენი პრობლემა"
+
+#: .\templates\index.html:213
+msgid "What can we offer?"
+msgstr "რას გთავაზობთ?"
+
+#: .\templates\index.html:217
+msgid "Rates"
+msgstr "რეიტები"
+
+#: .\templates\index.html:219
+msgid "Paagr.io Server Rates"
+msgstr "Paagr.io სერვერის რეიტები"
+
+#: .\templates\index.html:235
+msgid "Addons"
+msgstr "დამატებები"
+
+#: .\templates\index.html:237
+msgid "Paagr.io Server Addons"
+msgstr "Paagr.io სერვერის დამატებები"
+
+#: .\templates\index.html:248
+msgid "Events"
+msgstr "ღონისძიებები"
+
+#: .\templates\index.html:250
+msgid "Paagr.io Server Events"
+msgstr "Paagr.io სერვერის ღონისძიებები"
+
+#: .\templates\index.html:261
+msgid "More Features"
+msgstr "სახასიათო ნიშნები"
+
+#: .\templates\index.html:263
+msgid "Paagr.io Server More Features"
+msgstr "Paagr.io სერვერის სახასიათო ნიშნები"
+
+#: .\templates\index.html:282 .\templates\index.html:284
+#: .\templates\index.html:286
+msgid "Read more"
+msgstr "სრულად"
+
+#: .\templates\index.html:291
+msgid ""
+"Disclaimer: Rates, Events, Addons and any feature might change in future"
+msgstr ""
+"გთხოვთ გაითვალისწინოთ! რეიტები,ღონისძიებები,დამატებები და ნებისმიერი სხვა "
+"სახასიათო ნიშანი, შეიძლება შეიცვალოს მომავალში!"
+
+#: .\templates\index.html:297
+msgid "Choose Us"
+msgstr "აგვირჩიე"
+
+#: .\templates\index.html:300
+msgid ""
+"\n"
+"                          Long story short, we have competitive enviroment "
+"in which every player has a chance to prove himself.\n"
+"                          Our enviroment is developed in such way, that Solo "
+"Player or even a total newcomer to this wonderful game can have his own "
+"place\n"
+"                          in our large and on-growing community, we offer "
+"regular events, prizes, bundles, BONUS WEEKENDS and the most important, "
+"BALANCE.\n"
+"                          We are not aiming to oversaturate server with "
+"custom content, because true Lineage 2 player, enjoys the feel of the "
+"vanilla game.\n"
+"                          We Paagr.io High Five PvP Server developers, are "
+"looking forward to accept everyone's opinion, we want you, our community to "
+"shape our server,\n"
+"                          to get the best out of the Lineage 2. So, dear "
+"Paagrians, sharpen up, YOUR TIME IS NOW!\n"
+"                      "
+msgstr ""
+"\n"
+"                          ჩვენ გთავაზობთ კონკურენტუნარიან გარემოს, სადაც "
+"ყველა მოთამაშეს ეძლევა საშუალება დაამტკიცოს თავისი სიძლიერე.\n"
+"                          ჩვენი სამყარო გახლავთ ადგილი, სადაც სოლო "
+"მოთამაშეებს, ან საერთოდაც დამწყებ Lineage 2-ის მოთამაშეს შეეძლებათ "
+"დაიმკვიდრონ საკუთარი თავი\n"
+"                          ჩვენს დიდ და ზრდად საზოგადოებაში, ჩვენ გთავაზობთ "
+"რეგულარულ ღონისძიებებს, პრიზებს, პაკებს, ბონუს-ვიქენდებს და რაც ყველაზე "
+"მნიშვნელოვანია, ბალანსს.\n"
+"                          ჩვენ არ ვაპირებთ, რომ გადავტენოთ სერვერი ხელნაკეთი "
+"ელემენტებით, რადგან ნამდვილი Lineage 2 მოთამაშე, სიამოვნებას იღებს ნამდვილი "
+"ძირეული თამაშით.\n"
+"                          ჩვენ Paagr.io High Five PvP Server-ის "
+"დეველოპერებს, გვინდა მივიღოთ ყველას აზრი, ჩვენ გვინდა, რომ თქვენ, ჩვენმა "
+"საზოგადოებამ შექმნათ სათამაშო გარემო,\n"
+"                          სადაც მიიღებთ მაქსიმალურს Lineage 2 თამაშიდან. ასე "
+"რომ, ძვირფასო პააგრიელებო, დაირაზმეთ, თქვენი დროა!\n"
+"                      "
+
+#: .\templates\index.html:330 .\templates\news_detail.html:142
+#: .\templates\statistics_pk.html:161 .\templates\statistics_pvp.html:161
+msgid "Donate"
+msgstr "მაღაზია"
+
+#: .\templates\index.html:335 .\templates\news_detail.html:147
+#: .\templates\statistics_pk.html:166 .\templates\statistics_pvp.html:166
+msgid "Social Network"
+msgstr "სოციალური ქსელი"
+
+#: .\templates\index.html:344 .\templates\news_detail.html:156
+#: .\templates\statistics_pk.html:175 .\templates\statistics_pvp.html:175
+msgid "Support Us"
+msgstr "მხარდაჭერა"
+
+#: .\templates\index.html:356 .\templates\news_detail.html:163
+#: .\templates\statistics_pk.html:182 .\templates\statistics_pvp.html:182
+msgid "Copyright 2018 - Paagr.io, All Rights Reserved"
+msgstr "Copyright 2018 - Paagr.io, ყველა უფლება დაცულია"
+
+#: .\templates\payment\paygol.html:13 .\templates\payment\test.html:13
+msgid "Buy pCredits"
+msgstr "შეიძინეთ pCredit-ები!"
+
+#: .\templates\payment\paygol.html:21
+msgid "Choose Payment Option"
+msgstr "აირჩიეთ გადახდის მეთოდი"
+
+#: .\templates\payment\paygol.html:36
+msgid ""
+"After payment, you will recieve pCredits on your site-balance, to transfer "
+"it into you gaming follow link:"
+msgstr "გადახდის შემდგომ, თქვენ ჩაგერიცხებათ pCredit-ები ჩვენი საიტის ბალანსზე "
+"მოცემული ვალუტის სათამაშო პერსონაჟზე გადატანისთვის მიყევით ბმულს:"
+
+#: .\templates\payment\test.html:22
+msgid "Enter How much EUROS you wish to pay "
+msgstr "შეიყვანეთ რამდენი EURO-ს გადახდა გსურთ"
+
+#: .\templates\payment\test.html:27
+msgid ""
+"1 EUR <img class='paagrio-credit-icon' src='http://icons.iconarchive.com/"
+"icons/webalys/kameleon.pics/512/Euro-Coin-icon.png'/> = 55 pCredit"
+msgstr ""
+"1 ევრო (2.98 ლარი) <img class='paagrio-credit-icon' src='http://icons.iconarchive.com/"
+"icons/webalys/kameleon.pics/512/Euro-Coin-icon.png'/> = 55 pCredit"
+
+#: .\templates\payment\test.html:36
+msgid "Before Purchase Please Make Sure to read our"
+msgstr "დონაციის განხორციელებამდე გთხოვთ წაიკითხოთ:"
+
+#: .\templates\payment\test.html:38
+msgid "Proceed to Payment"
+msgstr "შემდეგ ეტაპზე გადასვლა"
+
+#: .\templates\statistics_pk.html:114 .\templates\statistics_pvp.html:114
+msgid "Top 50 PvP"
+msgstr "ტოპ 50 PvP"
+
+#: .\templates\statistics_pk.html:115 .\templates\statistics_pvp.html:115
+msgid "Top 50 PK"
+msgstr "ტოპ 50 PK"
+
+#: .\templates\statistics_pk.html:119 .\templates\statistics_pvp.html:119
+msgid "Nickname"
+msgstr "მეტსახელი"
+
+#: .\templates\statistics_pk.html:120 .\templates\statistics_pvp.html:120
+msgid "Clan"
+msgstr "კლანი"
+
+#: .\templates\statistics_pk.html:121 .\templates\statistics_pvp.html:121
+msgid "PVP/PK"
+msgstr ""
+
+#: .\templates\statistics_pk.html:122 .\templates\statistics_pvp.html:122
+msgid "Time online"
+msgstr "ნათამაშები დრო"
+
+#: .\templates\statistics_pk.html:123 .\templates\statistics_pvp.html:123
+msgid "Status"
+msgstr "სტატუსი"
+
+#: .\templates\userena\activate_retry_success.html:10
+#: .\templates\userena\signup_complete.html:13
+msgid ""
+"You have been sent an e-mail with an activation link to the supplied email."
+msgstr ""
+"აქტივაციის ლინკი გამოგზავნილია თქვენს მიერ მითითებულ ელ-ფოსტაზე."
+
+msgid "Your In-game Characters"
+msgstr "პერსონაჟები თამაშში"
+
+msgid "user"
+msgstr "მომხმარებელი"
+
+msgid "Create Account"
+msgstr "პროფილის შექმნა"
+
+msgid "Your time is NOW!"
+msgstr "შენი დროა!"
+
+msgid "Sign In"
+msgstr "ავტორიზაცია"
+
+msgid "Create password"
+msgstr "პაროლი"
+
+msgid "Need help?"
+msgstr "პრობლემის შემთხვევაში დააჭირეთ ამ ბმულს!"
+
+msgid "Signin"
+msgstr "ავტორიზაცია"
+
+msgid "Forgot your password?"
+msgstr "დაგავიწყდა პაროლი?"
+
+msgid "Create pMaster Account"
+msgstr "pMaster პროფილის რეგისტრაცია"
+
+msgid "E-mail or username"
+msgstr "ელ-ფოსტა ან სახელი"
+
+msgid "Email or username"
+msgstr "ელ-ფოსტა ან სახელი"
+
+msgid "You have been signed in."
+msgstr "თქვენ წარმატებით გაიარეთ ავტორიზაია"
+
+msgid "You have been signed out."
+msgstr "თქვენ წარმატებით გამოხვედით პროფილიდან"
+
+msgid "You have been signed out. Till we meet again."
+msgstr ""
+"თქვენ გამოხვედით პროფილიდან, იმედია მალე შევხვდებით! (მიმდინარეობს "
+"გადამისამართება...)"
+
+msgid "Back To Cabinet"
+msgstr "პროფილში დაბრუნება"
+
+msgid "First name"
+msgstr "სახელი"
+
+msgid "Last name"
+msgstr "გვარი"
+
+msgid "mugshot"
+msgstr "პროფილის სურათი"
+
+msgid "A personal image displayed in your profile."
+msgstr "თქვენი სურათი, რომელიც გამოჩნდება თქვენს პროფილში."
+
+msgid "privacy"
+msgstr "უსაფრთხოება"
+
+msgid "Designates who can view your profile."
+msgstr "ადგენს, თუ ვის შეუძლია ნახოს თქვენი პროფილი"
+
+msgid "Open"
+msgstr "ყველას"
+
+msgid "Registered"
+msgstr "რეგისტრირებულს"
+
+msgid "Save changes"
+msgstr "დამახსოვრება"
+
+msgid "Change email address"
+msgstr "ელ-ფოსტის მისამართის შეცვლა"
+
+msgid "Change email"
+msgstr "ელ-ფოსტის შეცვლა"
+
+msgid "New email"
+msgstr "ახალი ელ-ფოსტა"
+
+msgid "Repeat password"
+msgstr "გაიმეორეთ პაროლი"

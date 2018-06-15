@@ -1,0 +1,133 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == "ka-ge" %}
+    <meta charset="utf-8" />
+	
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static '/assets/img/apple-touch-icon-76x76.png'%}">
+    <link rel="icon" type="image/png" href="{% static '/assets/img/favicon.png'%}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>PAAGR.IO - x100 Lineage PvP {%trans "High Five Server"%}</title>
+	<meta name="description" content="Lineage 2 High Five PvP სერვერი, დაცული ბალანსი და კუნკურენტუნარიანი გარემო, ყველა პირობა გართობისთვის და მაქსიმალური გამოცდილების და სიამოვნების მიღება Lineage 2-სგან, მხოლოდ ჩვენთან! Paagrio - შენი დროა!"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="{% static '/assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static '/assets/css/now-ui-kit.css' %}" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{% static '/assets/css/demo.css' %}" rel="stylesheet" />
+    <link href="{% static '/css/paagr.io-ge.css' %}" rel="stylesheet" />
+    <!-- Paagr.io FONTS -->
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nateli-mtavruli/css/bpg-nateli-mtavruli.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-glaho-web/css/bpg-glaho-web.min.css">
+    {% else %}
+    <meta charset="utf-8" />
+	<meta name="nextpay-site-verification" content="ba89f4170f4adebb16702fb5705accf8"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static '/assets/img/apple-touch-icon-76x76.png'%}">
+    <link rel="icon" type="image/png" href="{% static '/assets/img/favicon.png'%}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>PAAGR.IO - x100 Lineage PvP {%trans "High Five Server"%}</title>
+	<meta name="description" content="Lineage 2 High Five PvP Server, Well balanced and competitive gameplay, we have completed every aspect for maximum fun and enjoyment of Lineage 2 game, Paagrio - Your time is now!"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="{% static '/assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static '/assets/css/now-ui-kit.css' %}" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{% static '/assets/css/demo.css' %}" rel="stylesheet" />
+    <link href="{% static '/css/paagr.io.css' %}" rel="stylesheet" />
+    <!-- Paagr.io FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Spectral+SC:200,400" rel="stylesheet">
+    {% endif %}
+</head>
+{% if messages %}
+{% for message in messages %}
+<div class="alert mb-0 alert-success" role="alert">
+    	<div class="container">
+    		<div class="alert-icon">
+    			<i class="now-ui-icons ui-1_bell-53"></i>
+    		</div>
+
+    		{%blocktrans%}{{ message }}{%endblocktrans%}
+
+    		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">
+    				<i class="now-ui-icons ui-1_simple-remove"></i>
+    			</span>
+    		</button>
+    </div>
+  </div>
+</hr>
+  {% endfor %}
+  {%else%}
+  <div class="alert mb-0 alert-info" role="alert">
+	<div class="container">
+		<div class="alert-icon">
+			<i class="now-ui-icons travel_info"></i>
+		</div>
+		 {%blocktrans%}<strong style="font-size: 14px; text-decoration:underline; font-weight:700;">OBT: 10-14 June (19:00 GMT+3) || OFFICIAL SERVER LAUNCH: JUNE 16 19:00 (GMT+3)</strong>{%endblocktrans%}
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">
+				<i class="now-ui-icons ui-1_simple-remove"></i>
+			</span>
+		</button>
+	</div>
+</div>
+ <a href="https://l2topzone.com/vote/id/15435" target="_blank" title="l2topzone" ><img src="https://l2topzone.com/vb/l2topzone-Lineage2-vote-banner-bottom-left-3.gif" style="position: fixed; z-index:99999; bottom: 0; left: 0;" alt="l2topzone.com" border="0"></a> 
+  {% endif %}
+  {% block content %}
+
+  {% endblock %}
+<!--   Core JS Files   -->
+<script src="{% static '/assets/js/core/jquery.3.2.1.min.js'%}" type="text/javascript"></script>
+<script src="{% static '/assets/js/core/popper.min.js'%}" type="text/javascript"></script>
+<script src="{% static '/assets/js/core/bootstrap.min.js'%}" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{% static '/assets/js/plugins/bootstrap-switch.js'%}"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{% static '/assets/js/plugins/nouislider.min.js'%}" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="{% static '/assets/js/plugins/bootstrap-datepicker.js'%}" type="text/javascript"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="{% static '/assets/js/now-ui-kit.js'%}" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // the body of this function is in assets/js/now-ui-kit.js
+        nowuiKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118598087-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118598087-1');
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ka_GE/sdk.js#xfbml=1&version=v2.12&appId=1038700886272836&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</html>

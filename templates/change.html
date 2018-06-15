@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+{% if request.user.username == qs.user.username and final%}
+
+<body class="profile-page sidebar-collapse">
+{% include "snippets/cabinet_header.html" %}
+      <div class="section">
+          <div class="container">
+              <div class="paagrio-cabinet-buttons button-container">
+                  <a href="{% url 'cabinet'%}" class="btn btn-primary btn-round btn-lg paagrio-cabinet-text">{% trans "Back To pManage" %}</a>
+      </div>
+      <div class="tab-pane" id="messages" role="tabpanel">
+          <div class="col-md-10 ml-auto mr-auto">
+              <div class="row collections">
+                  <div class="col-md-12">
+                    <table class="table table-light">
+                      <thead>
+                        <tr class="paagrio-cabinet-text-default">
+                          <th scope="col">{% trans "Acc.Name" %}</th>
+                          <th scope="col">{% trans "Char.Name" %}</th>
+                          <th scope="col">{% trans "PvP" %}</th>
+                          <th scope="col">{% trans "PK" %}</th>
+                          <th scope="col">{% trans "PCPB" %}</th>
+                          <th scope="col">{% trans "Fame" %}</th>
+                          <th scope="col">{% trans "Online" %}</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-left paagrio-cabinet-text-default">
+                        {% for char in characters %}
+                        <tr>
+                          <td>{{char.account_name}}</td>
+                          <th scope="row">{{char.char_name}}</th>
+                          <td>{{char.pvpkills}}</td>
+                          <td>{{char.pkkills}}</td>
+                          <td>{{char.pcbangpoints}}</td>
+                          <td>{{char.fame}}</td>
+                          <td>{% if char.online == 0 %}NO{%else%}YES{% endif %}</td>
+                          <td>
+                            <a href="{%url 'characters_manage' slug2=char.obj_id slug1=char.account_name %}" class="btn btn-primary btn-success" rel="tooltip">{% trans "Transfer pCredit" %}</a>
+                          </td>
+
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                      </table>
+                      <img src="../static/assets/img/screen2.jpg" alt="" class="img-raised">
+                  </div>
+
+              </div>
+          </div>
+      </div>
+              <h3 class="title paagrio-title ">{% trans "Change Password" %}</h3>
+              <h5 class="description"></h5>
+              <form method="post">
+                {% csrf_token %}
+                <div class="container">
+                    <div class="col-md-12 content-center">
+                        <div class="card card-login card-plain">
+                                <div class="header header-primary text-center">
+                                    <div class="logo-container">
+                                        <img src="../assets/img/now-logo.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content content-center" align="center">
+                                  <span class="content-center" align="center">{% trans "New Password" %}</span>
+
+                                    <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons objects_key-25"></i>
+                                        </span>
+                                        {{form.password}}
+
+
+                                    </div>
+                                    {% blocktrans %}{{form.password.errors.as_text}}{%endblocktrans%}
+                                    <div class="footer text-center">
+                                        <button class="btn btn-primary btn-round btn-lg btn-block" type="submit" name="button">{% trans "Set New Password" %}</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</body>
+{% else %}
+{% trans "You Have No Permission Here" %}
+{%endif%}
+{%endblock%}

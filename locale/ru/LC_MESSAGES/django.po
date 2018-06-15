@@ -1,0 +1,664 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-22 15:21+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\accounts\models.py:16
+msgid "User"
+msgstr "Пользователь"
+
+#: .\accounts\models.py:18
+msgid "Interests"
+msgstr "Интересы"
+
+#: .\master_account\views.py:18 .\paagrio\settings.py:99 .\paagrio\views.py:12
+#: .\payment\views.py:24
+msgid "English"
+msgstr "Английский"
+
+#: .\master_account\views.py:19 .\paagrio\settings.py:98 .\paagrio\views.py:13
+#: .\payment\views.py:25
+msgid "Georgian"
+msgstr "Грузинский"
+
+#: .\master_account\views.py:20 .\paagrio\settings.py:100 .\paagrio\views.py:14
+#: .\payment\views.py:26
+msgid "Russian"
+msgstr "Русскии"
+
+#: .\templates\base.html:13 .\templates\base.html:34
+msgid "High Five Server"
+msgstr "High Five Сервер"
+
+#: .\templates\base.html:58
+#, python-format
+msgid "%(message)s"
+msgstr ""
+
+#: .\templates\base.html:75
+msgid ""
+"<strong style=\"font-size: 14px; text-decoration:underline; font-weight:700;"
+"\">OBT: 10-14 June (19:00 GMT+3) || OFFICIAL SERVER LAUNCH: JUNE 16 19:00 "
+"(GMT+3)</strong>"
+msgstr ""
+"<strong style=\"font-size: 14px; text-decoration:underline; font-weight:700;"
+"\">ОБТ: 10-14 Июнь (19:00 GMT+3) || Официалныи Старт: Июнь 16 19:00 (GMT+3)</"
+"strong>"
+
+#: .\templates\cabinet.html:30 .\templates\snippets\cabinet_header.html:11
+msgid "Back To Home"
+msgstr "На главную"
+
+#: .\templates\cabinet.html:42 .\templates\snippets\cabinet_header.html:23
+msgid "Sign Out "
+msgstr "Выиход"
+
+#: .\templates\cabinet.html:45 .\templates\snippets\cabinet_header.html:26
+msgid "Bonus Points:"
+msgstr "Бонус очковь:"
+
+#: .\templates\cabinet.html:48 .\templates\cabinet.html:56
+#: .\templates\snippets\cabinet_header.html:29
+#: .\templates\snippets\cabinet_header.html:37
+msgid "pCredit"
+msgstr "пКредит"
+
+#: .\templates\cabinet.html:52 .\templates\char_manage.html:22
+#: .\templates\snippets\cabinet_header.html:33
+msgid "Buy"
+msgstr "Купить"
+
+#: .\templates\cabinet.html:59 .\templates\snippets\cabinet_header.html:40
+msgid "pCredit Discount"
+msgstr "Скидка на пКредит"
+
+#: .\templates\cabinet.html:69
+msgid "Bonus?"
+msgstr "Бонус?"
+
+#: .\templates\cabinet.html:70
+msgid "Add In-Game Account"
+msgstr "Добавить игровой аккаунт"
+
+#: .\templates\cabinet.html:80
+msgid "Add In-game Account"
+msgstr "Добавить игровой аккаунт"
+
+#: .\templates\cabinet.html:92
+#, python-format
+msgid "%(form.non_field_errors.as_text|striptags)s"
+msgstr ""
+
+#: .\templates\cabinet.html:93
+#, python-format
+msgid "%(form.login.errors.as_text)s"
+msgstr ""
+
+#: .\templates\cabinet.html:95
+msgid "Username"
+msgstr "Никнеим"
+
+#: .\templates\cabinet.html:104
+msgid "Password"
+msgstr "Пароль"
+
+#: .\templates\cabinet.html:111
+msgid "Repeat Password"
+msgstr "Повторите пароль"
+
+#: .\templates\cabinet.html:123
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\cabinet.html:126
+msgid "Add Account"
+msgstr "Добавить Акаунт"
+
+#: .\templates\cabinet.html:133
+msgid "Gift Cards"
+msgstr "Подарочные карты"
+
+#: .\templates\cabinet.html:136
+msgid "Edit Profile"
+msgstr "Редактировать профиль"
+
+#: .\templates\cabinet.html:139 .\templates\change.html:54
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: .\templates\cabinet.html:142
+msgid "Change Email"
+msgstr "Изменить Почту"
+
+#: .\templates\cabinet.html:147 .\templates\index.html:36
+#: .\templates\index.html:186 .\templates\news_detail.html:34
+#: .\templates\statistics_pk.html:34 .\templates\statistics_pvp.html:34
+msgid "Download Files"
+msgstr "Скачать фаилов"
+
+#: .\templates\cabinet.html:152 .\templates\index.html:40
+#: .\templates\index.html:41 .\templates\news_detail.html:38
+#: .\templates\news_detail.html:39 .\templates\statistics_pk.html:38
+#: .\templates\statistics_pk.html:39 .\templates\statistics_pvp.html:38
+#: .\templates\statistics_pvp.html:39
+msgid "Download Full High Five Client"
+msgstr "Скачать High Five клиент"
+
+#: .\templates\cabinet.html:155 .\templates\index.html:43
+#: .\templates\index.html:44 .\templates\news_detail.html:41
+#: .\templates\news_detail.html:42 .\templates\statistics_pk.html:41
+#: .\templates\statistics_pk.html:42 .\templates\statistics_pvp.html:41
+#: .\templates\statistics_pvp.html:42
+msgid "Download Paagr.io Server Patch"
+msgstr "Скачать Paagr.io сервер патч"
+
+#: .\templates\cabinet.html:161
+msgid "In-Game Accounts"
+msgstr "Игровые записки"
+
+#: .\templates\cabinet.html:165
+msgid "Your In-game Accounts"
+msgstr "Твой игровые записки"
+
+#: .\templates\cabinet.html:180
+msgid "Login"
+msgstr "Вход"
+
+#: .\templates\cabinet.html:181
+msgid "Last IP"
+msgstr "Последни IP"
+
+#: .\templates\cabinet.html:182
+msgid "HWID"
+msgstr ""
+
+#: .\templates\cabinet.html:183
+msgid "Actions"
+msgstr "Действия"
+
+#: .\templates\cabinet.html:193
+msgid "Manage Account"
+msgstr "Управление"
+
+#: .\templates\cabinet.html:214 .\templates\change.html:92
+msgid "You Have No Permission Here"
+msgstr "Нет доступа!"
+
+#: .\templates\change.html:12 .\templates\char_manage.html:11
+#: .\templates\payment\paygol.html:11 .\templates\payment\test.html:11
+msgid "Back To pManage"
+msgstr "Назад в pManage"
+
+#: .\templates\change.html:21
+msgid "Acc.Name"
+msgstr "Пользователь"
+
+#: .\templates\change.html:22
+msgid "Char.Name"
+msgstr "Персонаж"
+
+#: .\templates\change.html:23
+msgid "PvP"
+msgstr "ПвП"
+
+#: .\templates\change.html:24
+msgid "PK"
+msgstr "Пк"
+
+#: .\templates\change.html:25
+msgid "PCPB"
+msgstr "ПСБП"
+
+#: .\templates\change.html:26
+msgid "Fame"
+msgstr "Феим"
+
+#: .\templates\change.html:27
+msgid "Online"
+msgstr "В Игре?"
+
+#: .\templates\change.html:41
+msgid "Transfer pCredit"
+msgstr "Передать пКредитов"
+
+#: .\templates\change.html:68
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: .\templates\change.html:78
+#, python-format
+msgid "%(form.password.errors.as_text)s"
+msgstr ""
+
+#: .\templates\change.html:80
+msgid "Set New Password"
+msgstr "Ставить новый пароль"
+
+#: .\templates\char_manage.html:13 .\templates\char_manage.html:38
+msgid "Transfer pCredits"
+msgstr "Покупка pCredit-ов!"
+
+#: .\templates\char_manage.html:22
+msgid "Your Total Available Balance: "
+msgstr "Ваш общий доступный баланс: "
+
+#: .\templates\char_manage.html:27
+msgid "Enter how much pCredits you want to transfer"
+msgstr "Укажите, сколько пКредитов вы хотите перенести"
+
+#: .\templates\char_manage.html:35 .\templates\payment\paygol.html:35
+#: .\templates\payment\test.html:35
+#, python-format
+msgid "%(form.errors.as_text)s"
+msgstr ""
+
+#: .\templates\char_manage.html:36
+msgid ""
+"PLEASE KEEP IN MIND CHARACTER MUST BE OFFLINE IN ORDER TO TRANSFER "
+"SUCCESSFULLY!"
+msgstr "ВАЖНО!: ПЕРСОНАЖ ДОЛЖЕН БЫТЬ ОФЛАИН ЧТОБ ПЕРЕДАЧА БЫЛО УСПЕШНИМ!"
+
+#: .\templates\index.html:12 .\templates\news_detail.html:10
+#: .\templates\statistics_pk.html:10 .\templates\statistics_pvp.html:10
+msgid "Paagr.io - Lineage 2 High Five Server"
+msgstr "Paagr.io - Lineage 2 High Five Сервер"
+
+#: .\templates\index.html:24 .\templates\index.html:318
+#: .\templates\news_detail.html:22 .\templates\news_detail.html:130
+#: .\templates\statistics_pk.html:22 .\templates\statistics_pk.html:149
+#: .\templates\statistics_pvp.html:22 .\templates\statistics_pvp.html:149
+msgid "Home"
+msgstr "Главныи"
+
+#: .\templates\index.html:27 .\templates\index.html:321
+#: .\templates\news_detail.html:25 .\templates\news_detail.html:133
+#: .\templates\statistics_pk.html:25 .\templates\statistics_pk.html:152
+#: .\templates\statistics_pvp.html:25 .\templates\statistics_pvp.html:152
+msgid "Download"
+msgstr "Скачать"
+
+#: .\templates\index.html:48 .\templates\news_detail.html:46
+#: .\templates\statistics_pk.html:46 .\templates\statistics_pvp.html:46
+msgid "Close"
+msgstr "Закрыть"
+
+#: .\templates\index.html:49 .\templates\index.html:111
+#: .\templates\index.html:186 .\templates\news_detail.html:47
+#: .\templates\news_detail.html:103 .\templates\statistics_pk.html:47
+#: .\templates\statistics_pk.html:103 .\templates\statistics_pvp.html:47
+#: .\templates\statistics_pvp.html:103
+msgid "Register"
+msgstr "Регистрация"
+
+#: .\templates\index.html:57 .\templates\index.html:324
+#: .\templates\news_detail.html:55 .\templates\news_detail.html:136
+#: .\templates\statistics_pk.html:55 .\templates\statistics_pk.html:155
+#: .\templates\statistics_pvp.html:55 .\templates\statistics_pvp.html:155
+msgid "Statistics"
+msgstr "Статистика"
+
+#: .\templates\index.html:60 .\templates\index.html:327
+#: .\templates\news_detail.html:58 .\templates\news_detail.html:139
+#: .\templates\statistics_pk.html:58 .\templates\statistics_pk.html:158
+#: .\templates\statistics_pvp.html:58 .\templates\statistics_pvp.html:158
+msgid "Community"
+msgstr "Сообщество"
+
+#: .\templates\index.html:71 .\templates\news_detail.html:69
+#: .\templates\statistics_pk.html:69 .\templates\statistics_pvp.html:69
+msgid "pManage"
+msgstr ""
+
+#: .\templates\index.html:76 .\templates\news_detail.html:74
+#: .\templates\statistics_pk.html:74 .\templates\statistics_pvp.html:74
+msgid "JOIN NOW!"
+msgstr "НАЧАТЬ ИГРУ!"
+
+#: .\templates\index.html:82 .\templates\news_detail.html:80
+#: .\templates\statistics_pk.html:80 .\templates\statistics_pvp.html:80
+msgid "Buy pCredits!"
+msgstr "Покупка пКредитов!"
+
+#: .\templates\index.html:97 .\templates\news_detail.html:95
+#: .\templates\statistics_pk.html:95 .\templates\statistics_pvp.html:95
+msgid "<h1>High Five - X100 <br> PvP, Your Time is <br>NOW!</h1>"
+msgstr "<h1>High Five - X100 <br> PvP, Твоё <br>ВРЕМЯ!</h1>"
+
+#: .\templates\index.html:99 .\templates\news_detail.html:97
+#: .\templates\statistics_pk.html:97 .\templates\statistics_pvp.html:97
+msgid "<span>Want to know more about server?</span>"
+msgstr "<span>Хочешь знать подробности о сервере?</span>"
+
+#: .\templates\index.html:102 .\templates\index.html:104
+#: .\templates\index.html:106 .\templates\news_detail.html:99
+#: .\templates\statistics_pk.html:99 .\templates\statistics_pvp.html:99
+msgid "Details"
+msgstr "Подробности"
+
+#: .\templates\index.html:109 .\templates\news_detail.html:101
+#: .\templates\statistics_pk.html:101 .\templates\statistics_pvp.html:101
+msgid "<span>or are you ready to join us?</span>"
+msgstr "<span>или, ты уже готов к игре?</span>"
+
+#: .\templates\index.html:157
+msgid "#StreamUs"
+msgstr "#Трансляция"
+
+#: .\templates\index.html:165
+msgid "Watch!"
+msgstr "Смотреть!"
+
+#: .\templates\index.html:171
+msgid "Become a streamer"
+msgstr "Стань Стримером"
+
+#: .\templates\index.html:175
+msgid "Server"
+msgstr "Сервер"
+
+#: .\templates\index.html:179
+msgid "Chronicle: High Five"
+msgstr "Хроника: High Five"
+
+#: .\templates\index.html:179
+msgid "x100</br>ON"
+msgstr ""
+
+#: .\templates\index.html:183
+msgid "Paagrio - High Five"
+msgstr ""
+
+#: .\templates\index.html:186
+msgid "Quick start: "
+msgstr "Быстрый старт: "
+
+#: .\templates\index.html:186
+msgid " > "
+msgstr ""
+
+#: .\templates\index.html:190
+msgid "News/Fixes"
+msgstr "Журнал"
+
+#: .\templates\index.html:205
+msgid "Submit your issue"
+msgstr "Напишите свою проблему"
+
+#: .\templates\index.html:213
+msgid "What can we offer?"
+msgstr "Что мы предлогаем?"
+
+#: .\templates\index.html:217
+msgid "Rates"
+msgstr "Рейты"
+
+#: .\templates\index.html:219
+msgid "Paagr.io Server Rates"
+msgstr "Рейты сервера Paagr.io"
+
+#: .\templates\index.html:235
+msgid "Addons"
+msgstr "Дополнение"
+
+#: .\templates\index.html:237
+msgid "Paagr.io Server Addons"
+msgstr "Дополнение сервера Paagr.io"
+
+#: .\templates\index.html:248
+msgid "Events"
+msgstr "Ивенты"
+
+#: .\templates\index.html:250
+msgid "Paagr.io Server Events"
+msgstr "Ивенты сервера Paagr.io"
+
+#: .\templates\index.html:261
+msgid "More Features"
+msgstr "Доп. Функции"
+
+#: .\templates\index.html:263
+msgid "Paagr.io Server More Features"
+msgstr "Доп. Функции сервера Paagr.io"
+
+#: .\templates\index.html:282 .\templates\index.html:284
+#: .\templates\index.html:286
+msgid "Read more"
+msgstr "Узнать больше"
+
+#: .\templates\index.html:291
+msgid ""
+"Disclaimer: Rates, Events, Addons and any feature might change in future"
+msgstr ""
+"Важно!: Рейты, Ивенты, Дополнение или любая функция может измениться в "
+"будущем"
+
+#: .\templates\index.html:297
+msgid "Choose Us"
+msgstr "Выберите нас"
+
+#: .\templates\index.html:300
+msgid ""
+"\n"
+"                          Long story short, we have competitive enviroment "
+"in which every player has a chance to prove himself.\n"
+"                          Our enviroment is developed in such way, that Solo "
+"Player or even a total newcomer to this wonderful game can have his own "
+"place\n"
+"                          in our large and on-growing community, we offer "
+"regular events, prizes, bundles, BONUS WEEKENDS and the most important, "
+"BALANCE.\n"
+"                          We are not aiming to oversaturate server with "
+"custom content, because true Lineage 2 player, enjoys the feel of the "
+"vanilla game.\n"
+"                          We Paagr.io High Five PvP Server developers, are "
+"looking forward to accept everyone's opinion, we want you, our community to "
+"shape our server,\n"
+"                          to get the best out of the Lineage 2. So, dear "
+"Paagrians, sharpen up, YOUR TIME IS NOW!\n"
+"                      "
+msgstr ""
+"\n"
+"                          Здравствуйте Паагрианци, у нас есть конкурентная среда "
+", в котором каждый игрок имеет возможность проявить себя. \n"
+"                          Наш сервер разработана так, что Solo "
+"Игрок или даже новичок будет иметь свой собственный"
+"место \n"
+"                          в нашем большом и растущем сообществе, мы предлагаем "
+"регулярные события, призы, пачки, Бонусные выходные и самое главное,"
+"БАЛАНС. \n"
+"                          Мы не хочем перенасыщать сервер "
+"с самодельныйм контентом, потому-что истинный игрок Lineage 2, наслаждается ощущением"
+"классичискои игры. \n"
+"                          Мы, разработчики Paagr.io High Five ПвП Сервера, "
+"с нетерпением ожидаем мнения от каждого из вас, мы хотим, чтобы вы, наше сообщество, "
+"будете формировать наш сервер, \n"
+"                          чтобы получить лучшее из Lineage 2. Итак, дорогой "
+"Паагрианци, в бою!, ВАШЕ ВРЕМЯ СЕЙЧАС! \n"
+"                      "
+
+#: .\templates\index.html:330 .\templates\news_detail.html:142
+#: .\templates\statistics_pk.html:161 .\templates\statistics_pvp.html:161
+msgid "Donate"
+msgstr "Пожертвование"
+
+#: .\templates\index.html:335 .\templates\news_detail.html:147
+#: .\templates\statistics_pk.html:166 .\templates\statistics_pvp.html:166
+msgid "Social Network"
+msgstr "Соц. Сеть"
+
+#: .\templates\index.html:344 .\templates\news_detail.html:156
+#: .\templates\statistics_pk.html:175 .\templates\statistics_pvp.html:175
+msgid "Support Us"
+msgstr "Поддержка"
+
+#: .\templates\index.html:356 .\templates\news_detail.html:163
+#: .\templates\statistics_pk.html:182 .\templates\statistics_pvp.html:182
+msgid "Copyright 2018 - Paagr.io, All Rights Reserved"
+msgstr "Copyright 2018 - Paagr.io, Все права защищены"
+
+#: .\templates\payment\paygol.html:13 .\templates\payment\test.html:13
+msgid "Buy pCredits"
+msgstr "Покупка пКредит-ов!"
+
+#: .\templates\payment\paygol.html:21
+msgid "Choose Payment Option"
+msgstr "Выберите вариант оплаты"
+
+#: .\templates\payment\paygol.html:36
+msgid ""
+"After payment, you will recieve pCredits on your site-balance, to transfer "
+"it into you gaming follow link:"
+msgstr ""
+"После оплаты вы получите пКредитов на нашем сайте, чтобы перечислить "
+"кредитов на игровой персонаж, переидите на ссылке:"
+
+#: .\templates\payment\test.html:22
+msgid "Enter How much EUROS you wish to pay "
+msgstr "Укажите, сколько EURO вы хотите заплатить"
+
+#: .\templates\payment\test.html:27
+msgid ""
+"1 EUR <img class='paagrio-credit-icon' src='http://icons.iconarchive.com/"
+"icons/webalys/kameleon.pics/512/Euro-Coin-icon.png'/> = 55 pCredit"
+msgstr ""
+"1 Евро (~73руб) <img class='paagrio-credit-icon' src='http://icons.iconarchive.com/"
+"icons/webalys/kameleon.pics/512/Euro-Coin-icon.png'/> = 55 пКредит"
+
+#: .\templates\payment\test.html:36
+msgid "Before Purchase Please Make Sure to read our"
+msgstr "Перед покупкой пожалусто прочитаите:"
+
+#: .\templates\payment\test.html:38
+msgid "Proceed to Payment"
+msgstr "Переход на Оплату"
+
+#: .\templates\statistics_pk.html:114 .\templates\statistics_pvp.html:114
+msgid "Top 50 PvP"
+msgstr "Топ 50 ПвП"
+
+#: .\templates\statistics_pk.html:115 .\templates\statistics_pvp.html:115
+msgid "Top 50 PK"
+msgstr "Топ 50 ПК"
+
+#: .\templates\statistics_pk.html:119 .\templates\statistics_pvp.html:119
+msgid "Nickname"
+msgstr "Никнеим"
+
+#: .\templates\statistics_pk.html:120 .\templates\statistics_pvp.html:120
+msgid "Clan"
+msgstr "Клан"
+
+#: .\templates\statistics_pk.html:121 .\templates\statistics_pvp.html:121
+msgid "PVP/PK"
+msgstr "ПвП/ПК"
+
+#: .\templates\statistics_pk.html:122 .\templates\statistics_pvp.html:122
+msgid "Time online"
+msgstr "Время Онлаин"
+
+#: .\templates\statistics_pk.html:123 .\templates\statistics_pvp.html:123
+msgid "Status"
+msgstr "Статус"
+
+msgid "Your In-game Characters"
+msgstr "Твойи игровые персонажи"
+
+msgid "user"
+msgstr "Пользователь"
+
+msgid "Create Account"
+msgstr "Создать Профиль"
+
+msgid "Your time is NOW!"
+msgstr "Твоё время!"
+
+msgid "Sign In"
+msgstr "Авторизация"
+
+msgid "Create password"
+msgstr "Пароль"
+
+msgid "Need help?"
+msgstr "Нужен помощь?!"
+
+msgid "Signin"
+msgstr "Авторизация"
+
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+msgid "Create pMaster Account"
+msgstr "Регистрация pMaster профилья"
+
+msgid "E-mail or username"
+msgstr "Почта или никнеим"
+
+msgid "Email or username"
+msgstr "Почта или никнеим"
+
+msgid "You have been signed in."
+msgstr "Выи успешно авторизовали"
+
+msgid "You have been signed out."
+msgstr "Вы успешно вышли из профилья"
+
+msgid "You have been signed out. Till we meet again."
+msgstr ""
+"Вы успешно вышли из профилья, Скоро увидимся! (Идет переадресация...)"
+
+msgid "Back To Cabinet"
+msgstr "Назад в профиль"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамильия"
+
+msgid "mugshot"
+msgstr "Картьинка Профилья"
+
+msgid "A personal image displayed in your profile."
+msgstr "Ваш картьинок, которы будет видно в ваш профиль."
+
+msgid "privacy"
+msgstr "Безопасность"
+
+msgid "Designates who can view your profile."
+msgstr "кто может видеть ваш профиль"
+
+msgid "Open"
+msgstr "Открыит"
+
+msgid "Registered"
+msgstr "Зарегистрированы"
+
+msgid "Save changes"
+msgstr "Сохранить"
+
+msgid "Change email address"
+msgstr "Сменя Почтовых Адресов"
+
+msgid "Change email"
+msgstr "Изменить Почту"
+
+msgid "New email"
+msgstr "Новая почта"
+
+msgid "Repeat password"
+msgstr "Повторение Паролья"

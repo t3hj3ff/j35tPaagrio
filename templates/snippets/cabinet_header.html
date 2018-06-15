@@ -1,0 +1,46 @@
+{% load i18n %}
+{% load static %}
+<div class="page-header page-header-small" filter-color="orange">
+    <div class="page-header-image" style="background-image: url('{%static '/assets/img/bg5.jpg'%}');">
+    </div>
+    <div class="container">
+      <div class="social-description">
+        <a href="{%url 'index'%}">
+          <button class="btn btn-info paagrio-back-to-main ">
+            <i class="now-ui-icons arrows-1_minimal-up"></i>
+            {% trans "Back To Home" %}
+            </button>
+        </a>
+      </div>
+        <div class="content-center">
+            <div class="photo-container">
+                <img src="{{ qs.get_mugshot_url }}" alt="">
+            </div>
+            <h3 class="title paagrio-title">{{request.user.username}}</h3>
+              <a href="{%url 'userena_signout'%}">
+                <button class="btn btn-danger btn-sm paagrio-back-to-main ">
+                  <i class="now-ui-icons ui-1_simple-remove"></i>
+                  {% trans "Sign Out " %}
+                  </button>
+              </a>
+            <p class="category paagrio-warning">{% blocktrans %}Bonus Points:{% endblocktrans %} {{qs.account_bonus}}</p>
+            <div class="content">
+                <div class="social-description">
+                    <p class="paagrio-wrapper-content">{% trans "pCredit" %}</p>
+                    <h2 class="paagrio-warning">{{qs.account_balance}} <img class="paagrio-credit-icon" src="{% static '/assets/img/pcredit-2.png'%}" alt=""></h2>
+                </div>
+                <div class="social-description">
+                  <span class="paagrio-warning paagrio-pcredit-buy"><a href="{%url 'fillout_payment'%}">{% trans "Buy" %}</a></span>
+                  <div class="photo-container">
+                    <a href="{%url 'fillout_payment'%}"><img class="paagrio-credit" src="{% static '/assets/img/pcredit-2.png'%}" alt=""></a>
+                  </div>
+                  <span class="paagrio-warning paagrio-pcredit-buy"><a href="{%url 'fillout_payment'%}">{% trans "pCredit" %}</a></span>
+                </div>
+                <div class="social-description">
+                    <p class="paagrio-wrapper-content">{% trans "pCredit Discount" %}</p>
+                    <h2 class="paagrio-warning">{{qs.account_discount}}%</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

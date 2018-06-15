@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<body class="profile-page sidebar-collapse">
+{% include "snippets/cabinet_header.html" %}
+      <div class="section">
+          <div class="container">
+              <div class="paagrio-cabinet-buttons button-container">
+                  <a href="{% url 'cabinet'%}" class="btn btn-primary btn-round btn-lg paagrio-cabinet-text">{% trans "Back To pManage" %}</a>
+      </div>
+              <h3 class="title paagrio-title ">{% trans "Transfer pCredits" %}</h3>
+              <h5 class="description"></h5>
+              <form method="post">
+                {% csrf_token %}
+                <div class="container">
+                    <div class="col-md-12 content-center">
+                        <div class="card card-login card-plain">
+                                <div class="header header-primary text-center">
+                                    <div class="logo-container">
+                                        <span class="content-center paagrio-warning" align="center">{% trans "Your Total Available Balance: " %}{{qs.account_balance}} <img class="paagrio-credit-icon" src="{% static '/assets/img/pcredit-2.png'%}" alt=""> <a class="btn btn-info" href="#"> {% trans "Buy" %}</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="content content-center" align="center">
+                                  <span class="content-center" align="center">{% trans "Enter how much pCredits you want to transfer" %}</span>
+
+                                    <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons objects_key-25"></i>
+                                        </span>
+                                        {{form.amount}}
+                                    </div>
+                                    {% blocktrans %}{{form.errors.as_text}}{%endblocktrans%}
+                                    <span class="content-center" style="color:red;" align="center">{% trans "PLEASE KEEP IN MIND CHARACTER MUST BE OFFLINE IN ORDER TO TRANSFER SUCCESSFULLY!" %}</span>
+                                    <div class="footer text-center">
+                                        <button class="btn btn-primary btn-round btn-lg btn-block" type="submit" name="button">{% trans "Transfer pCredits" %}</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</body>
+
+{%endblock%}

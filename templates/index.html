@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+{% block content %}
+{% load i18n %}
+{% load static %}
+
+
+<body class="landing-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary paagrio-custom">
+        <div class="container">
+            <div >
+                <a class="navbar-brand" href="#" rel="tooltip" title="{% trans 'Paagr.io - Lineage 2 High Five Server'%}" data-placement="bottom" target="_blank">
+                  <img src="{% static '/assets/img/logo.png'%}" class="d-inline-block align-top" alt=""></a>
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation" data-nav-image="{% static '/assets/img/blurred-image-1.jpg'%}">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'index'%}">{% trans "Home"%}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal" href="#">{% trans "Download"%}</a>
+                    </li>
+
+                    <!-- Modal Core -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content paagrio-download-bg">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title mx-auto paagrio-copyright" id="myModalLabel">{% trans "Download Files" %}</h4>
+                          </div>
+                          <div class="modal-body mx-auto content-center">
+                            <div class="container mx-auto text-center">
+                              <a href="#"><button type="button" class="btn btn-success paagrio-copyright">{% trans "Download Full High Five Client" %} - Direct</button></a>
+                              <a href="#"><button type="button" class="btn btn-success paagrio-copyright">{% trans "Download Full High Five Client" %} - Google</button></a>
+                            </hr>
+                              <a href="#"><button type="button" class="btn btn-primary paagrio-copyright">{% trans "Download Paagr.io Server Patch" %} - Direct</button></a>
+                              <a href="#"><button type="button" class="btn btn-primary paagrio-copyright">{% trans "Download Paagr.io Server Patch" %} - Google</button></a>
+                              </div>
+                            </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">{% trans "Close"%}</button>
+                            <a href="{%url 'userena_signup'%}"><button type="button" class="btn btn-info btn-success">{% trans "Register"%}</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'statistics'%}">{% trans "Statistics"%}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://forum.paagr.io/">{% trans "Community"%}</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar-nav" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    {% if user.is_authenticated %}
+                    <a href="{%url 'cabinet'%}">
+                    <button class="btn btn-primary btn-round">
+                      <i class="now-ui-icons users_single-02"></i> {% trans "pManage"%}
+                    </button></a>
+                    {% else %}
+                    <a href="{%url 'userena_signin'%}">
+                    <button class="btn btn-primary btn-round">
+                    	<i class="now-ui-icons users_single-02"></i> {% trans "JOIN NOW!"%}
+                    </button></a>
+                    {% endif %}
+                  </li>
+                  <li class="nav-item">
+                    <a href="{%url 'fillout_payment'%}">
+                    <button class="btn paagrio-donate btn-primary btn-icon btn-icon-mini btn-round" data-toggle="tooltip" data-placement="bottom" title="{% trans 'Buy pCredits!'%}">
+                    	<img class="paagrio-credit" src="{% static '/assets/img/pcredit.png'%}" alt="">
+                    </button></a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="page-header page-header-small mt-0 paagrio-wrapper">
+            <div class="page-header-image" style="background-image: url('{%static '/assets/img/bg1.jpg'%}');">
+            </div>
+            <div class="container">
+                <div class="paagrio-t text-justify float-right">
+                    {% trans "<h1 style='font-size: 1.9rem !important;'>High Five - X100 <br> PvP, Your Time is <br>NOW!</h1>"%}
+                    <div class="paagrio-wrapper-content">
+                        {% trans "<span>Want to know more about server?</span>"%}
+                        <div class="paagrio-button ">
+                          {% if LANGUAGE_CODE == "en-us" %}
+                            <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-lg">{% trans "Details"%}</button></a>
+                          {% elif LANGUAGE_CODE == "ka-ge" %}
+                            <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-lg">{% trans "Details"%}</button></a>
+                          {%else%}
+                            <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-lg">{% trans "Details"%}</button></a>
+                          {%endif%}
+                        </div>
+                        {% trans "<span>or are you ready to join us?</span>"%}
+                        <div class="paagrio-button ">
+                          <a href="{%url 'userena_signup'%}"><button class="btn btn-primary btn-lg">{% trans "Register"%}</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+				<div class="paagrio-button" style="position: absolute; left: 30%; ">
+						<p class="paagrio-warning">PAAGRIO x100 START:</p> <p class="paagrio-warning btn btn-success" id="demo"></p>
+						<script>
+						// Set the date we're counting down to
+						var countDownDate = new Date("Jun 16, 2018 19:00:00").getTime();
+
+						// Update the count down every 1 second
+						var x = setInterval(function() {
+
+							// Get todays date and time
+							var now = new Date().getTime();
+
+							// Find the distance between now an the count down date
+							var distance = countDownDate - now;
+
+							// Time calculations for days, hours, minutes and seconds
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							// Output the result in an element with id="demo"
+							document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "
+							+ minutes + " Minutes";
+
+							// If the count down is over, write some text
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("demo").innerHTML = "EXPIRED";
+							}
+						}, 1000);
+						</script>
+						</div>
+            </div>
+
+        </div>
+        <div class="section paagrio-server">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 ml-auto mr-auto ">
+                        <h2 class="title paagrio-title">{% trans "#StreamUs"%}</h2>
+                        <hr>
+                        <div class="container">
+                          <div class="row">
+                            <img src="/static/assets/img/stream-1.png" width="35" alt="Thumbnail Image" class="paagrio-streamer-image rounded-circle img-fluid img-raised">
+                              <div class="paagrio-streamer pb-1 pl-1">
+                                <span>PAAGRIO</span>
+                                <button class="btn btn-primary btn-round btn-sm paagrio-button">
+                                	<i class="now-ui-icons tech_tv"></i> {% trans "Watch!"%}
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="container" align="center">
+                          {% if LANGUAGE_CODE == "en-us" %}<a href="http://forum.paagr.io/index.php?threads/become-a-streamer.3/#post-3">{% elif LANGUAGE_CODE == "ka-ge" %}<a href="http:// forum.paagr.io/index.php?threads/geo-გახდი-სტრიმერი.7/#post-7">{% else %}<a href="">{% endif %}<button class="btn btn-primary btn-round btn-sm paagrio-button">{% trans "Become a streamer"%}</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ml-auto mr-auto text-center">
+                        <h2 class="title paagrio-title">{% trans "Server"%}</h2>
+                        <hr>
+                        <div class="row">
+                          <div class="mx-auto" align="center">
+                            <div class="numberCircle" data-toggle="tooltip" data-placement="top" title="{% trans 'Chronicle: High Five'%}">{% trans "x100</br>ON"%}</div>
+                          </div>
+                        </div>
+                        <div class="paagrio-server mx-auto pt-3" align="center">
+                          <span>{% trans "Paagrio - High Five"%}</span>
+                        </div>
+                        <div class="mx-auto paagrio-server-next pt-2" align="center">
+                          <span class="pt-5">{% trans "Quick start: " %}<a class="btn-simple btn-success btn-round" href="{%url 'userena_signup'%}">{% trans "Register" %}</a>{% trans " > " %}<a class="btn-simple btn-info btn-round" href="#" data-toggle="modal" data-target="#myModal">{% trans "Download Files" %}</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ml-auto mr-auto ">
+                        <h2 class="title paagrio-title">{% trans "News/Fixes"%}</h2>
+                        <hr>
+                        <!-- მულტი ლენგუიჯ პოსტებისთვის გასაკეთებელია IF ლოგიკა -->
+                        {% for news in news %}
+                        <span class="badge badge-primary paagrio-button">{{news.type}}</span>
+                        <div class="container">
+                          <div class="row">
+                            <div class="paagrio-news">
+                              <a href="{%url 'news_detail' slug=news.slug%}"><span>{% if LANGUAGE_CODE == "en-us" %}{{news.title}}{% elif LANGUAGE_CODE == "ka-ge" %}{{news.title_ka}}{% else %}{{news.title_ru}}{% endif %}</span></a>
+                            </div>
+                            <span class="paagrio-timestamp">{{news.timestamp}}</span>
+                          </div>
+                        </div>
+                        {% endfor %}
+                        <div class="container">
+                          <a href="http://forum.paagr.io"><button class="btn btn-primary btn-round btn-md paagrio-button">{% trans "Submit your issue"%}</button></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="section section-team text-center">
+            <div class="container">
+                <h2 class="title paagrio-title">{% trans "What can we offer?"%}</h2>
+                <div class="team" align="left">
+                    <div class="row" >
+                        <div class="col-md-3" align="center">
+                            <h1 class="paagrio-h1">{% trans "Rates"%}</h1>
+                            <button class="btn btn-primary paagrio-serverinfo btn-icon btn-lg btn-icon-mini btn-round"
+                            data-toggle="popover" data-placement="bottom" title="{% trans 'Paagr.io Server Rates'%}"
+                            data-content="Exp: 100<br>
+                                          SP: 100<br>
+                                          Adena: 40<br>
+                                          Drop: 20<br>
+                                          Spoil: 15<br>
+                                          Quest Chance: 15<br>
+                                          Quest Reward: 10<br>
+                                          Raid Reward: 10<br>
+                                          Epic Reward: 1<br>
+                                          Epaluette: 7<br>
+                                          Fame: 5" data-html="true">
+                            	<i class="now-ui-icons travel_info "></i>
+                            </button>
+                        </div>
+                        <div class="col-md-3" align="center">
+                            <h1 class="paagrio-h1">{% trans "Addons"%}</h1>
+                            <button class="btn btn-primary paagrio-serverinfo btn-icon btn-lg btn-icon-mini btn-round"
+                            data-toggle="popover" data-placement="bottom" title="{% trans 'Paagr.io Server Addons'%}"
+                            data-content="Rune of Adena<br>
+                                          Rune of Spoil<br>
+                                          Rune of Craft<br>
+                                          6 New Costumes (visual only)<br>
+                                          6 New Hair Accessory (visual only)<br>
+                                          Exchange Coupons<br>" data-html="true">
+                            	<i class="now-ui-icons ui-1_settings-gear-63"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-3" align="center">
+                            <h1 class="paagrio-h1">{% trans "Events"%}</h1>
+                            <button class="btn btn-primary paagrio-serverinfo btn-icon btn-lg btn-icon-mini btn-round"
+                            data-toggle="popover" data-placement="bottom" title="{% trans 'Paagr.io Server Events'%}"
+                            data-content="TvT<br>
+                                          CtF<br>
+                                          Last Hero<br>
+                                          Fight Club<br>
+                                          Tournament<br>
+                                          Simple Raid Bosses" data-html="true">
+                            	<i class="now-ui-icons emoticons_satisfied"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-3" align="center">
+                            <h1 class="paagrio-h1">{% trans "More Features"%}</h1>
+                            <button class="btn btn-primary paagrio-serverinfo btn-icon btn-lg btn-icon-mini btn-round"
+                            data-toggle="popover" data-placement="bottom" title="{% trans 'Paagr.io Server More Features'%}"
+                            data-content="* All Characters Start With Lv. 1 at their default spawn zone<br>
+                                          * MP Bottle exists which refills 1200MP on 12s. cooldown<br>
+                                          * ALT+B Shop with C-Dynasty/C-Icarus Weapon/Armor<br>
+                                          * Hellbound Isle is open 11lv.<br>
+                                          * All Epics are dead on server start<br>
+                                          * Macros 'bug' exists<br>
+                                          * BSS 'bug' does NOT exist<br>
+                                          * All 30% raid drops are raised to 100% (Queen ant, Core, Orfen)<br>
+                                          * Olympiad cycle/TW/Siege 1 week<br>
+                                          * Auto attribute/Sum talisman life/Autoloot etc.<br>
+                                          * Bonuses for new players during 1 week after server start" data-html="true">
+                            	<i class="now-ui-icons tech_controller-modern"></i>
+                            </button>
+                        </div>
+                      </div>
+
+                      <div class="container pt-5" align="center">
+                        {% if LANGUAGE_CODE == "en-us" %}
+                          <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-round btn-lg paagrio-button">{% trans "Read more"%}</button></a>
+                        {% elif LANGUAGE_CODE == "ka-ge" %}
+                          <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-round btn-lg paagrio-button">{% trans "Read more"%}</button></a>
+                        {%else%}
+                          <a href="http://forum.paagr.io/index.php?threads/paagrio-x100-სერვერის-აღწერა-სერვერის-სტარტი-16-ივნისი-20-00.19/"><button class="btn btn-primary btn-round btn-lg paagrio-button">{% trans "Read more"%}</button></a>
+                        {%endif%}
+                      </div>
+
+                    </div>
+                    <span align="center" class="paagrio-warning">{% trans "Disclaimer: Rates, Events, Addons and any feature might change in future"%}</span>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <div class="container">
+                <h2 class="title paagrio-title">{% trans "Choose Us"%}</h2>
+                <div class="row">
+                    <div class="col-lg-9 text-center col-md-8 ml-auto mr-auto">
+                        <p class="text">{% blocktrans %}
+                          Long story short, we have competitive enviroment in which every player has a chance to prove himself.
+                          Our enviroment is developed in such way, that Solo Player or even a total newcomer to this wonderful game can have his own place
+                          in our large and on-growing community, we offer regular events, prizes, bundles, BONUS WEEKENDS and the most important, BALANCE.
+                          We are not aiming to oversaturate server with custom content, because true Lineage 2 player, enjoys the feel of the vanilla game.
+                          We Paagr.io High Five PvP Server developers, are looking forward to accept everyone's opinion, we want you, our community to shape our server,
+                          to get the best out of the Lineage 2. So, dear Paagrians, sharpen up, YOUR TIME IS NOW!
+                      {% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-default paagrio-footer-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="nav flex-column">
+                  <li class="nav-item paagrio-footer-menu">
+                  <a class="nav-link" href="{%url 'index'%}">{% trans "Home"%}</a>
+                  </li>
+                  <li class="nav-item paagrio-footer-menu">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">{% trans "Download"%}</a>
+                  </li>
+                  <li class="nav-item paagrio-footer-menu">
+                  <a class="nav-link" href="{%url 'statistics'%}">{% trans "Statistics"%}</a>
+                  </li>
+                  <li class="nav-item paagrio-footer-menu">
+                  <a class="nav-link" href="http://forum.paagr.io">{% trans "Community"%}</a>
+                  </li>
+                  <li class="nav-item paagrio-footer-menu-donate">
+                  <a class="nav-link" href="{%url 'fillout_payment'%}">{% trans "Donate"%}</a>
+                  </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h2 class="paagrio-footer-h2">{% trans "Social Network"%}</h2>
+				  <a href="https://fb.com/paagr.io" target="_blank"><button class="btn btn-info btn-round">
+						<i class="fa fa-facebook-f"></i> FACEBOOK
+				  </button></a>
+				  <a href="https://vk.com/public165896213" target="_blank"><button class="btn btn-info btn-round">
+						<i class="fa fa-vk"></i> VKONTAKTE
+				  </button></a>
+				</div>
+                <div class="col-md-4">
+                  <h2 class="paagrio-footer-h2">{% trans "Support Us"%}</h2>
+				  <a href="https://la2.mmotop.ru/servers/30476" target="_blank">
+  <img src="http://img.mmotop.ru/mmo_30476.png" border="0" id="mmotopratingimg" alt="Рейтинг серверов mmotop">
+</a>
+<script type="text/javascript">document.write("<script src='http://js.mmotop.ru/rating_code.js?" + Math.round((((new Date()).getUTCDate() + (new Date()).getMonth() * 30) / 7)) + "_" + (new Date()).getFullYear() + "' type='text/javascript'><\/script>");</script>
+<a href="//top.l2jbrasil.com/index.php?a=in&u=t3hjeff" target="_blank"><img src="//top.l2jbrasil.com/button.php?u=t3hjeff" alt="Top L2JBrasil  de Servidores de   Lineage2 " border="0" /></a>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <footer class="footer footer-default paagrio-footer-dark">
+            <div class="container" align="middle">
+              <span class="paagrio-copyright">{% trans "Copyright 2018 - Paagr.io, All Rights Reserved"%}</span>
+            </div>
+        </footer>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,261 @@
+.paagrio-donate {
+  background-color: #dc3545;
+  height: 2.975rem !important;
+  width: 2.975rem !important;
+}
+.paagrio-donate-lg {
+  background-color: #dc3545;
+  height: 105px!important;
+  width: 105px!important;
+  border-radius: 90px !important;
+}
+.paagrio-pcredit-buy a{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: #dc3545 0 0 5px, #f96332 1px 7px 8px;
+  transition: 0.5s;
+}
+.paagrio-pcredit-buy a:hover {
+  color: #f96332;
+  transition: 0.5s;
+}
+.paagrio-slogan {
+  position: absolute;
+  bottom: 0;
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 28px;
+  font-weight:lighter;
+  text-transform: uppercase;
+  padding-left:25%;
+}
+.paagrio-title {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 48px;
+  font-weight: lighter;
+}
+.paagrio-login {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 48px;
+  font-weight: lighter;
+  color: #f96332;
+}
+.paagrio-warning {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.paagrio-copyright {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #FFF;
+}
+.paagrio-donate:hover {
+  background-color: #dc3545c2;
+}
+.paagrio-custom {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 21px;
+  background-color: #FFF !important;
+}
+.paagrio-wrapper {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.paagrio-t {
+  padding-top: 7rem;
+}
+.paagrio-wrapper-content {
+  font-family: "BPG Glaho WEB", sans-serif;
+  text-transform:none;
+  font-size: 16px;
+}
+.paagrio-button {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.paagrio-button button{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.paagrio-streamer span{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.paagrio-news a{
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.paagrio-news a:hover {
+  transition: 0.2s;
+  color: #f96332;
+}
+.paagrio-news span{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.paagrio-timestamp {
+  font-family: "BPG Glaho WEB", sans-serif;
+  text-transform:none;
+  font-size: 16px;
+}
+.paagrio-server {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.paagrio-server-next {
+  font-family: "BPG Glaho WEB", sans-serif;
+  text-transform:none;
+  font-size: 16px;
+  color: #f96332;
+}
+.paagrio-streamer-image {
+  height:100% !important;
+}
+.paagrio-h1 {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform:none;
+  font-size: 21px;
+  color: #f96332;
+  font-weight: lighter;
+}
+.paagrio-footer-h2 {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform:none;
+  font-size: 21px;
+  color: #FFF;
+  font-weight: lighter;
+}
+.paagrio-serverinfo {
+  background-color: #000;
+}
+.paagrio-footer-dark {
+  background-color: #001422 !important;
+}
+.paagrio-footer-light {
+  background-color: #001d31 !important;
+}
+.nav-link {
+  color: #000 !important;
+}
+.paagrio-footer-menu a{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 18px !important;
+  text-transform: capitalize;
+  color: #FFF !important;
+  font-weight: lighter;
+}
+.paagrio-footer-menu a:hover {
+  color: #f96332 !important;
+}
+.paagrio-footer-menu-donate a{
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 18px !important;
+  text-transform: capitalize;
+  color: #dc3545 !important;
+}
+.paagrio-footer-menu-donate a:hover {
+  color: #dc3545c2 !important;
+}
+.paagrio-cabinet-buttons {
+  word-spacing: 15px;
+}
+.paagrio-back-to-main {
+  width: 11rem !important;
+}
+.paagrio-cabinet-text {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 21px;
+  font-weight: lighter;
+  word-spacing: 0;
+}
+.paagrio-cabinet-text-default {
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  text-transform: capitalize;
+  font-size: 21px;
+  font-weight: lighter;
+}
+.paagrio-credit {
+  opacity: 1.0;
+  transition: 0.5s;
+  box-shadow: 10px -10px 5px rgba(0,0,0,1.6);
+}
+.paagrio-credit:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.paagrio-credit-icon {
+  opacity: 1.0;
+  transition: 0.5s;
+  max-width:30px !important;
+}
+.paagrio-signin {
+  width: 400px !important;
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 30px;
+}
+.paagrio-signup {
+  width: 400px !important;
+  font-family: "BPG Nateli Mtavruli", sans-serif;
+  font-size: 21px;
+}
+.navbar {
+  margin-bottom: 3px;
+}
+.nav-item a:hover {
+  color: #dc3545c2 !important;
+}
+.navbar-brand img {
+  transition: 0.5s;
+}
+.navbar-brand img:hover {
+  display: block; width: 100%;
+  -webkit-filter: opacity(.2);
+  filter: opacity(.2);
+  transition: 0.8s;
+}
+.page-header.page-header-small {
+    height: 80vh;
+    max-height: 740px;
+}
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 126px;
+    height: 126px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #009f34;
+    color: #f96332;
+    text-align: center;
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.profile-page .photo-container {
+  height: 67px !important;
+  width: 67px !important;
+}
+.sidebar-collapse .navbar .navbar-toggler-bar {
+  background: #000 !important;
+}
+@media screen and (max-width: 991px) {
+  .sidebar-collapse .navbar .navbar-nav {
+      margin-top: 0;
+  }
+}

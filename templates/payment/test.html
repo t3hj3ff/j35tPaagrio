@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<body class="profile-page sidebar-collapse">
+{% include "snippets/cabinet_header.html" %}
+      <div class="section">
+          <div class="container">
+              <div class="paagrio-cabinet-buttons button-container">
+                  <a href="{% url 'cabinet'%}" class="btn btn-primary btn-round btn-lg paagrio-cabinet-text">{% trans "Back To pManage" %}</a>
+      </div>
+              <h3 class="title paagrio-title ">{% trans "Buy pCredits" %}</h3>
+              <h5 class="description"></h5>
+              <form class="" action="https://paagr.io/donate/choose/#centerContent" method="post">
+                {% csrf_token %}
+                <div class="container">
+                    <div class="col-md-12 content-center">
+                        <div class="card card-login card-plain">
+                                <div class="header header-primary text-center">
+                                    <div class="logo-container">
+                                        <span class="content-center paagrio-warning" align="center">{% trans "Enter How much EUROS you wish to pay " %}</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="content content-center" align="center">
+                                  <span class="content-center" align="center">{% trans "1 EUR <img class='paagrio-credit-icon' src='http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Euro-Coin-icon.png'/> = 55 pCredit" %}<img class="paagrio-credit-icon" src="{% static '/assets/img/pcredit-2.png'%}" alt=""> </span>
+
+                                    <div class="input-group form-group-no-border input-lg" style="font-size: 25px !important;">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-euro-sign" style="width: 35px !important;"><img src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Euro-Coin-icon.png"/></i>
+                                        </span>
+											{{form.pg_price}}
+                                    </div>
+                                    {% blocktrans %}{{form.errors.as_text}}{%endblocktrans%}
+                                    <span class="content-center" style="color:red;" align="center">{% trans "Before Purchase Please Make Sure to read our" %}<br><a href="#">Terms of Service</a> & <a href="#">Privacy/Refund Policy</a</span>
+                                    <div class="footer text-center">
+                                        <button class="btn btn-primary btn-round btn-lg btn-block" type="submit" name="button">{% trans "Proceed to Payment" %}</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</body>
+
+{%endblock%}
+
